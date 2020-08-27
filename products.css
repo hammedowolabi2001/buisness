@@ -1,0 +1,84 @@
+body{
+    background-color: #ececec;
+}
+.top-header{
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+} 
+.nav-link{
+    margin-right: 100px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#bar{
+    font-family: 'catamaran', sans-serif;
+}
+.product1, .product2, .product3{
+    
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    grid-gap: 200px;
+
+}
+
+.product2, .product3{
+    margin-top: 70px;
+}
+.pix{
+    width:400px;
+    height:400px;
+}
+.pixel2 p{
+    font-size:17px;
+}
+#but{
+    width: 630px;
+    background-color: orangered;
+    color:white;
+} 
+#but a:hover {
+    background-color: #ececec;
+}
+ .content{
+
+    margin-left: 280px;
+    margin-right: 280px;
+    height:fit-content;
+    
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr;
+}
+.img{
+    width:150px;
+    height: 200px;
+    margin-top: -20px;
+
+}
+.label{
+    color: black;
+    font-size: 20px;
+} 
+
+@media screen and (max-width:520px){
+    .pix{
+        width: 300px;
+        height: 500px;
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+    .content{
+
+        margin-left: 80px;
+        margin-right: 80px;
+        
+        width:600px;
+        
+        
+    }
+
+}
