@@ -42,7 +42,7 @@ var Rcount=0
 var Pcount =0  
 var Ccount  =0
 var totalArr=[];
-var total =0;
+
 var allproducts = {
   radio:['images/radio.png', 'pure radio <br> $45.99 <br> remove', Rcount, 45.99 ],
   phone:['./images/phone.png', 'Pixel Phone <br> $300.99 <br> remove', Pcount, 300.99 ],
@@ -51,7 +51,7 @@ var allproducts = {
 
 
 document.querySelector('.master').addEventListener('click', function(event){
-  
+  var total =0;
     var id = event.target.id
    //console.log(allproducts[id][0]); 
 
@@ -60,9 +60,9 @@ document.querySelector('.master').addEventListener('click', function(event){
     newhtml = newhtml.replace('2', allproducts[id][2])
     totalArr.push(allproducts[id][3]);
     console.log(totalArr);
-    totalArr.forEach(element => {
-      total+=element
-    });
+    for(var n=0; n<=totalArr.length-1; n++ ){
+      total+=totalArr[n]
+    }
      console.log(total);
      
      document.querySelector('.total').textContent= total
